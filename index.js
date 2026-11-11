@@ -1,6 +1,7 @@
 const logger = require('./logger.cjs')
+const date = new Date()
 
-logger.info('Aplicacion iniciada')
-logger.warn('Memoria disponible baja')
-logger.error('No se pudo conectar con el servidor')
-logger.debug('Ejecutando funcion principal')
+logger.info(`${date} Aplicacion iniciada`)
+logger.warn(`${date} Memoria disponible baja`)
+logger.error(`${date} No se pudo conectar con el servidor`)
+logger.debug(`${date} Ejecutando funcion principal`)
